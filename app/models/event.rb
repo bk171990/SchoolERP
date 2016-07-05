@@ -12,12 +12,19 @@ class Event < ActiveRecord::Base
   def create_event(batches, departments)
     if is_common?
       common_to_all
+<<<<<<< HEAD
     else 
+=======
+    else
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
       batches_event(batches)
       departments_event(departments)
     end
   end
+<<<<<<< HEAD
 
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   
   # event created for all batches and department
   def common_to_all
@@ -46,4 +53,8 @@ class Event < ActiveRecord::Base
       dept, event_id: id)
     end
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898

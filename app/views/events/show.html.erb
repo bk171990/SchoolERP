@@ -18,7 +18,11 @@
         <fieldset>
           <div class="col-md-1"></div>
 				  <div class="box col-md-12">
+<<<<<<< HEAD
 						<%= form_for :events,url:{action:'create',event: @event},method: :patch,html: {id: "cust"} do |f| %>
+=======
+						<%= form_for :events,url:{action:'update',event: @event},method: :patch,html: {id: "cust"} do |f| %>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 							<%= hidden_field_tag :event_id,@event.id%>
 							<div class="row">
 								<div class="form-group">
@@ -35,7 +39,11 @@
 								</div><br>
 								<div class="form-group">
 									<div class="col-md-6"><b> End Date:</b></div>
+<<<<<<< HEAD
 									<div class="col-md-6"><%=@event.end_date.to_date%><S/div>
+=======
+									<div class="col-md-6"><%=@event.end_date.to_date%></div>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 								</div><br>
 								<%unless @event.is_common? %>
 									<div class="form-group">
@@ -46,7 +54,11 @@
 										<div class="col-md-6"><b> Select Department:</b></div>
 										<div class="col-md-6"><%=select_tag("departments[]",options_for_select(@departments.collect { |d| [d.name, d.id] }),{:multiple=>true, :id => "departments"})%></div>
 									</div><br>
+<<<<<<< HEAD
 								
+=======
+								<%end%>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 								<br><div class="form-group">
 							  	<div class="col-md-offset-4">
 						 				<%=f.submit 'Confirm',class: "btn btn-primary"%>&nbsp;&nbsp;

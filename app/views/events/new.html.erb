@@ -2,7 +2,11 @@
   <ul class="breadcrumb">
     <li><%= link_to 'Home',dashboard_home_index_path %></li>
     <li><%= link_to 'Calendar','/calender'%></li>
+<<<<<<< HEAD
     <li>Create New Event:Step</li>
+=======
+    <li>Create New Event:Step-1</li>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   </ul>
 </div><div id="flash"><%= render 'layouts/messages'%></div>
 
@@ -20,15 +24,22 @@
       <div class="box col-md-7">
       <%= form_for @event ,url:{action:'create'}, html: { id: "cust"} do |f| %>
         <div class="form-group">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
         <b>Start Date:</b>
         <%=f.text_field :start_date ,value: @start_date,readonly:true,:id=>'datetimepicker2',class: "form-control",style: "width: 350px"%>
         </div>
 
           <div class="form-group">
           <b>End Date:</b>
+<<<<<<< HEAD
           <%= f.date_field :end_date ,value: @start_date,class: "form-control datepicker" %>
         </div>
+=======
+          <%=f.text_field :end_date ,class: "form-control datepicker",placeholder: "MM/DD/YYYY"%></div>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 
         <div class="form-group">
 
@@ -37,13 +48,17 @@
           <label id="first"></label>
           <%= f.text_field :title,class: "form-control",placeholder: "Event Title",style: "width: 350px",required:true %>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
       <div class="form-group">
 
       <b>Description:</b>
       <%=f.text_field :description ,class: "form-control",style:"width: 350px",placeholder: "Event Description",required:true %>
 
       </div>
+<<<<<<< HEAD
               
       <div class="form-group">
 
@@ -60,6 +75,8 @@
       </div>
                
         
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
         <div class="form-group">
         <%= f.check_box :is_holiday, {:checked=>false}%>&nbsp; 
 
@@ -73,7 +90,11 @@
         
          <div class="form-group">
         <div align="center" class="col-md-offset-2">
+<<<<<<< HEAD
    <%= f.submit :'Create Event',class: "btn btn-primary"%>&nbsp;&nbsp;&nbsp;&nbsp;
+=======
+   <%= f.submit :'Create Event',class: "btn btn-primary"%>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
    <%= link_to 'Cancel', calender_index_path, class: "btn btn-default"%>
    </div>
   </div>
@@ -113,6 +134,7 @@ $(function() {
  
  });
 </script>
+<<<<<<< HEAD
 <link rel="stylesheet" 
       href="/assets/bootstrap-multiselect.css" 
       type="text/css" />
@@ -148,3 +170,5 @@ $(function() {
   });
 });
 </script>
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898

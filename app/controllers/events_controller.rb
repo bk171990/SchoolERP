@@ -1,13 +1,20 @@
 # Events Controller
 class EventsController < ApplicationController
+<<<<<<< HEAD
  
+=======
+  
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   # create event object
   # get date on whcih we want to create event
   def new
     @event = Event.new
+<<<<<<< HEAD
     @events = Event.all
       @batches ||= Batch.all
     @departments ||= EmployeeDepartment.all
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
     @start_date = params[:format]
     authorize! :create, @event
   end
@@ -18,10 +25,15 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(params_event)
     if @event.save
+<<<<<<< HEAD
        @batches ||= Batch.all
     @departments ||= EmployeeDepartment.all
       flash[:notice] = 'Event created successfully'
       redirect_to calender_index_path(@event)
+=======
+      flash[:notice] = 'Event created successfully'
+      redirect_to event_path(@event)
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
     else
       render 'new'
     end
@@ -52,6 +64,7 @@ class EventsController < ApplicationController
     end
   end
 
+<<<<<<< HEAD
   def delete
   @event = Event.find_by(params[:id])
   event.destroy
@@ -59,6 +72,8 @@ class EventsController < ApplicationController
 end
 
 
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   # this private methods tell us exactly which parameters are allowed
   # into our controller actions.
 

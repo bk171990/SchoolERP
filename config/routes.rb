@@ -360,7 +360,10 @@ Rails.application.routes.draw do
 
     member do
       get :change
+<<<<<<< HEAD
       
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
     end
   end
 

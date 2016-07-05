@@ -30,7 +30,11 @@
 				    <b>Start Date:<span style="color:red">*</span></b>
 				  </div>
 				  <div class="col-md-7">
+<<<<<<< HEAD
 				    <%=e.date_field :start_date,class: "form-control",required: true%>
+=======
+				    <%=e.date_field :start_date,class: "form-control datepicker",required: true%>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 				  </div>
 				</div><br/>
 				
@@ -39,6 +43,7 @@
 				    <b>End Date:<span style="color:red">*</span></b>
 				  </div>
 				  <div class="col-md-7">
+<<<<<<< HEAD
 				    <%=e.date_field :end_date,class: "form-control",required: true%>
 				  </div>
 				</div><br/>
@@ -46,6 +51,12 @@
 				
 				<%= e.submit "Delete", class: "btn btn-danger"%>
 				<%= e.submit "Update",class: "btn btn-success"%>
+=======
+				    <%=e.date_field :end_date,class: "form-control datepicker",required: true%>
+				  </div>
+				</div><br/>
+				<center><%= e.submit "Update",class: "btn btn-success"%></center>
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 			<%end%>
 		</div>
 	</div>

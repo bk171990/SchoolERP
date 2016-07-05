@@ -39,9 +39,18 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+<<<<<<< HEAD
     bcrypt (3.1.10)
     bootstrap3-datetimepicker-rails (4.0.0)
       momentjs-rails (>= 2.8.1)
+=======
+    aws-sdk (1.61.0)
+      aws-sdk-v1 (= 1.61.0)
+    aws-sdk-v1 (1.61.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
+    bcrypt (3.1.10)
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
     brakeman (3.0.1)
       erubis (~> 2.6)
       fastercsv (~> 1.5)
@@ -86,8 +95,11 @@ GEM
     coffee-script-source (1.9.0)
     colorize (0.7.5)
     daemon_controller (1.2.0)
+<<<<<<< HEAD
     date_validator (0.8.1)
       activemodel
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -264,7 +276,11 @@ PLATFORMS
 
 DEPENDENCIES
   active_median (~> 0.1.0)
+<<<<<<< HEAD
   bootstrap3-datetimepicker-rails (~> 4.0.0)
+=======
+  aws-sdk
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   brakeman
   calendar_date_select
   cancan
@@ -273,7 +289,10 @@ DEPENDENCIES
   capistrano-rails
   chartkick
   coffee-rails
+<<<<<<< HEAD
   date_validator (~> 0.8.1)
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   devise
   groupdate (~> 2.1.1)
   html5_validators
@@ -303,4 +322,8 @@ DEPENDENCIES
   yard
 
 BUNDLED WITH
+<<<<<<< HEAD
    1.12.5
+=======
+   1.11.2
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
