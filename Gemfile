@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 gem 'rails'
 # Use postgresql as the database for Active Record
 gem 'mysql2'
+<<<<<<< HEAD
+# gem 'pg'
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -11,14 +15,22 @@ gem 'uglifier'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer',  platforms: :ruby
+# gem 'therubyracer',  platforms: :ruby
 gem 'paperclip'
 gem 'imagemagick-binaries'
+<<<<<<< HEAD
+# gem 'aws-sdk'
+gem 'devise'
+gem 'cancan'
+gem 'pdfkit'
+gem 'date_validator', '~> 0.8.1'
+=======
 gem 'aws-sdk'
 gem 'devise'
 gem 'cancan'
 gem 'pdfkit'
-gem 'wkhtmltopdf-binary'
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
+gem 'wkhtmltopdf-binary-edge'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -55,15 +67,23 @@ gem 'active_median', '~> 0.1.0'
 gem 'calendar_date_select'
 gem 'jquery-ui-rails'
 gem 'momentjs-rails', '>= 2.9.0'
+<<<<<<< HEAD
 gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
+=======
+# gem 'bootstrap3-datetimepicker-rails', '~> 4.0.0'
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 gem 'jquery-validation-rails', '~> 1.13.1'
 gem 'yard'
 
 group :development, :test do
-  gem 'postgresql'
+  gem 'pry-byebug'
 end
 
 group :production do
-  gem 'postgresql'
   gem 'rails_12factor'
+<<<<<<< HEAD
+  gem 'pry-byebug'
 end
+=======
+end
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898

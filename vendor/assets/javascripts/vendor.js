@@ -15,12 +15,28 @@
 //= require jquery-ui/datepicker
 //= require dataTables/jquery.dataTables
 //= require moment
+<<<<<<< HEAD
 //= require bootstrap-datetimepicker
+=======
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 //= require_tree .
 
 
 $(function() {
+<<<<<<< HEAD
   $('.datepicker').datepicker();
+=======
+  $('.datepicker').datepicker(
+    {
+        changeYear: true,
+        changeMonth: true,
+        todayHighlight: true,
+        todayBtn: true,
+        orientation: 'auto top',
+        dateFormat: 'yy-mm-dd'
+      }
+    );
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
 });
 
 $(document).ready(function() {

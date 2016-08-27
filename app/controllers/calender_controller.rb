@@ -33,19 +33,39 @@ class CalenderController < ApplicationController
   def display_batch_department
     @event = Event.find(params[:format])
     @batches = @event.batches
+<<<<<<< HEAD
+    @departments = @event.employee_departments 
+  end
+  
+  # upadate method update a E params.require(:event).permit!ven,
+=======
     @departments = @event.employee_departments
   end
   
   # upadate method update a Even,
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   # and it accepts a hash containing the attributes that you want to update.
   # and perform authorization
   def update_event
     authorize! :update, @event
     @event = Event.find(params[:id])
+<<<<<<< HEAD
+   if params[:commit] == 'Update' 
+      @event.update(params_event)
+      flash[:notice] = 'Event updated successfully'
+      redirect_to calender_index_path
+    elsif params[:commit] == 'Delete'
+      @event.destroy
+      redirect_to calender_index_path
+  end
+  end
+
+=======
     return unless @event.update(params_event)
     flash[:notice] = 'Event updated successfully'
     redirect_to calender_index_path
   end
+>>>>>>> 51cc188b58c2dcd3ab1f34c9ee38e1cbe5357898
   
   # this private methods tell us exactly which parameters are allowed
   # into our controller actions.
